@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 	root 'static_pages#home'
-  get 'static_pages/dog'
-  get 'static_pages/home'
-  get 'static_pages/owner'
-  get 'static_pages/about'
-  get 'static_pages/contact'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/dog',			to: 'static_pages#dog'
+  get '/owner', 		to: 'static_pages#owner'
+  get '/about',			to: 'static_pages#about'
+  get '/contact', 	to: 'static_pages#contact'
 end
